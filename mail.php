@@ -9,14 +9,14 @@ $message = $_POST['message'];
 $mail->isSMTP();
 $mail->Host = 'mail.smtp2go.com';
 $mail->SMTPAuth = true;
-$mail->Username = 'zikazama';
-$mail->Password = 'FRGwRK3zcUmY';
+$mail->Username = '';
+$mail->Password = '';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 $mail->setFrom("$email", "$name");
 $mail->addReplyTo("$email", "$name");
 // Menambahkan penerima
-$mail->addAddress('fauzi190198@gmail.com');
+$mail->addAddress('nay@mineversal.com');
 // Subjek email
 $mail->Subject = "$subject";
 // Mengatur format email ke HTML
